@@ -1,4 +1,3 @@
----
 app-id: com.tdameritrade.ThinkOrSwim
 runtime: org.freedesktop.Platform
 runtime-version: '20.08'
@@ -42,8 +41,8 @@ modules:
         filename: thinkorswim_installer.sh
         url: >-
           https://mediaserver.thinkorswim.com/installer/InstFiles/thinkorswim_installer.sh
-        sha256: b032cddfa145a3b7d5e23c8b3fdb780c613f9c357c811710809366d393f463ce
-        size: 13445001
+        sha256: 8fda7ccd5d08268529cee287ccdde50415a03c2bf76819d3183f71e7cf645ff0
+        size: 17391358
 
       - type: file
         path: thinkorswim
