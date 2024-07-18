@@ -1,3 +1,4 @@
+---
 app-id: com.tdameritrade.ThinkOrSwim
 runtime: org.freedesktop.Platform
 runtime-version: '23.08'
@@ -9,10 +10,11 @@ tags:
   - proprietary
 
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.openjdk11
+  - org.freedesktop.Sdk.Extension.openjdk17
 
 finish-args:
   - --persist=.thinkorswim
+  - --persist=thinkorswim
   - --socket=x11
   - --share=ipc
   - --socket=pulseaudio
@@ -25,24 +27,30 @@ modules:
   - name: openjdk
     buildsystem: simple
     build-commands:
-      - /usr/lib/sdk/openjdk11/install.sh
+      - /usr/lib/sdk/openjdk17/install.sh
 
   - name: thinkorswim
     buildsystem: simple
 
     build-commands:
       - install -D thinkorswim /app/bin/thinkorswim
-      - install -Dm644 -t /app/share/metainfo com.tdameritrade.ThinkOrSwim.metainfo.xml
-      - install -Dm644 -t /app/share/applications com.tdameritrade.ThinkOrSwim.desktop
-      - install -Dm644 -t /app/share/icons/hicolor/512x512/apps com.tdameritrade.ThinkOrSwim.png
+      - >-
+        install -Dm644 -t
+        /app/share/metainfo com.tdameritrade.ThinkOrSwim.metainfo.xml
+      - >-
+        install -Dm644 -t
+        /app/share/applications com.tdameritrade.ThinkOrSwim.desktop
+      - >-
+        install -Dm644 -t
+        /app/share/icons/hicolor/512x512/apps com.tdameritrade.ThinkOrSwim.png
 
     sources:
       - type: extra-data
         filename: thinkorswim_installer.sh
         url: >-
-          https://mediaserver.thinkorswim.com/installer/InstFiles/thinkorswim_installer.sh
-        sha256: 97bb132c93572e0568d34b6a935bd7826c2bf3588cb3044b65c5947d6d2b4daf
-        size: 17744410
+          https://tosmediaserver.schwab.com/installer/InstFiles/thinkorswim_installer.sh
+        sha256: ddfb04af2ae3cb5d5afc984d8ec4c37ad02a6fefdab167497729b5c70301fc52
+        size: 18286803
 
       - type: file
         path: thinkorswim
