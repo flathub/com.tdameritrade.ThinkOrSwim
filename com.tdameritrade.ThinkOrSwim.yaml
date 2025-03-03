@@ -1,7 +1,7 @@
 ---
 app-id: com.tdameritrade.ThinkOrSwim
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 command: thinkorswim
 separate-locales: false
@@ -10,7 +10,7 @@ tags:
   - proprietary
 
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.openjdk17
+  - org.freedesktop.Sdk.Extension.openjdk21
 
 finish-args:
   - --persist=.thinkorswim
@@ -27,7 +27,7 @@ modules:
   - name: openjdk
     buildsystem: simple
     build-commands:
-      - /usr/lib/sdk/openjdk17/install.sh
+      - /usr/lib/sdk/openjdk21/install.sh
 
   - name: thinkorswim
     buildsystem: simple
