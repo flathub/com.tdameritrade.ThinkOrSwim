@@ -10,14 +10,14 @@
   <url type="homepage">https://www.tdameritrade.com/tools-and-platforms/thinkorswim/desktop.page</url>
   <description>
     <p>
+      **NOTE: This wrapper is not verified by, affiliated with, or supported by TD Ameritrade, Inc.**
+    </p>    
+    <p>
       With thinkorswim Desktop® you get access to elite-level trading tools
       and a platform backed by insights, education, and a dedicated trade
       desk. Experience the unparalleled power of a fully customizable trading
       experience, designed to help you nail even the most complex strategies
       and techniques.
-    </p>
-    <p>
-      NOTE: This wrapper is not verified by, affiliated with, or supported by TD Ameritrade, Inc.
     </p>
   </description>
   <screenshots>
