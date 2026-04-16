@@ -23,7 +23,7 @@
   <screenshots>
     <screenshot type="default">
       <image>
-        https://en.opensuse.org/images/a/ab/Thinkorswim-screenshot.png
+        https://raw.githubusercontent.com/flathub/com.tdameritrade.ThinkOrSwim/master/screenshots/Thinkorswim-screenshot.png
       </image>
     </screenshot>
   </screenshots>
@@ -34,4 +34,3 @@
     <release version="1970.1.1" date="2021-03-26"/>
   </releases>
 </component>
-
