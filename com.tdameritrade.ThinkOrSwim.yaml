@@ -49,8 +49,8 @@ modules:
         filename: thinkorswim_installer.sh
         url: >-
           https://tosmediaserver.schwab.com/installer/InstFiles/thinkorswim_installer.sh
-        sha256: 8b82cdbefbda976b357dbd9d09bf321646e4cb245320bfebd0a2bb85161dcf25
-        size: 30228251
+        sha256: 37f846f2f2826f634970d03eb77555dce58f4cc3eebc4212f548214ad1310be0
+        size: 30228323
 
       - type: file
         path: thinkorswim
