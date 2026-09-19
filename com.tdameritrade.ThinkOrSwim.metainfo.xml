@@ -6,7 +6,9 @@
   <summary>ThinkOrSwim Desktop application</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>LicenseRef-proprietary</project_license>
-  <developer_name>TD Ameritrade, Inc.</developer_name>
+  <developer id="com.tdameritrade">
+    <name>TD Ameritrade, Inc.</name>
+  </developer>
   <url type="homepage">https://www.tdameritrade.com/tools-and-platforms/thinkorswim/desktop.page</url>
   <description>
     <p>

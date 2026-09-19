@@ -34,6 +34,9 @@ modules:
 
     build-commands:
       - install -D thinkorswim /app/bin/thinkorswim
+      - /usr/lib/sdk/openjdk21/bin/javac NoSandboxAgent.java
+      - /usr/lib/sdk/openjdk21/bin/jar cfm tos-nosandbox-agent.jar MANIFEST.MF NoSandboxAgent*.class
+      - install -Dm644 tos-nosandbox-agent.jar /app/lib/thinkorswim/tos-nosandbox-agent.jar
       - >-
         install -Dm644 -t
         /app/share/metainfo com.tdameritrade.ThinkOrSwim.metainfo.xml
@@ -54,6 +57,12 @@ modules:
 
       - type: file
         path: thinkorswim
+
+      - type: file
+        path: NoSandboxAgent.java
+
+      - type: file
+        path: MANIFEST.MF
 
       - type: file
         path: com.tdameritrade.ThinkOrSwim.desktop

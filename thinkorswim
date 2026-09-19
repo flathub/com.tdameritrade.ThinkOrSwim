@@ -5,4 +5,8 @@ if [ ! -f "${HOME}/thinkorswim/thinkorswim" ]; then
     sh /app/extra/thinkorswim_installer.sh -q
 fi
 
+if [ -f /app/lib/thinkorswim/tos-nosandbox-agent.jar ]; then
+    export JAVA_TOOL_OPTIONS="${JAVA_TOOL_OPTIONS:+$JAVA_TOOL_OPTIONS }-javaagent:/app/lib/thinkorswim/tos-nosandbox-agent.jar"
+fi
+
 exec "${HOME}/thinkorswim/thinkorswim" "$@"
